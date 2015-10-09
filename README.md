@@ -2,6 +2,7 @@
 
 Firebase Ionic
 
-Git Clone
+Set Up
 
-Go to directory 'firebase' and in cmd type 'ionic serve'
+1)Git Clone 
+2)Go to directory 'firebase' and in cmd type 'ionic serve'
