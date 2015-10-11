@@ -15,7 +15,8 @@
                     url: '/dashboard',
                     views: {
                         'mainContent': {
-                            templateUrl: 'template/dashboard/dashboard.html'
+                            templateUrl: 'template/dashboard/dashboard.html',
+                            controller: 'DashboardController as vm'
                         }
                     }
                 }
