@@ -1,1 +1,9 @@
 /* Empty. Add your own CSS if you like */
+
+.home {
+    background-image: url("/img/7ba2f0fd4ddec.jpg");
+}
+
+.login-button {
+    padding-top: 400px;
+}

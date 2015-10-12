@@ -7,7 +7,7 @@
 
     /* @ngInject */
     function appRun(routerHelper) {
-        var otherwise = '/app/dashboard';
+        var otherwise = '/login';
         routerHelper.configureStates(getStates(), otherwise);
     }
 
@@ -18,7 +18,8 @@
                 config: {
                     url: "/app",
                     abstract: true,
-                    templateUrl: "template/menu/menu.html"
+                    templateUrl: "template/menu/menu.html",
+                    controller: 'MenuController as vm'
                 }
             }
         ];

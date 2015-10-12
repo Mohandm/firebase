@@ -2,7 +2,7 @@
     <ion-side-menu-content>
         <ion-nav-bar class="bar-positive" align-title='center'>
             <ion-nav-title>
-                FireBase App
+
             </ion-nav-title>
             <ion-nav-buttons side="left">
                 <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
@@ -13,28 +13,20 @@
     </ion-side-menu-content>
 
     <ion-side-menu side="left">
-        <header class="bar bar-header bar-positive">
-            <h1 class="title">Fire Base</h1>
-        </header>
-        <ion-content class="has-header">
+
+        <ion-content>
+            <div class="item item-dark item-avatar" href="#">
+                <img src="{{userImg}}">
+                <h2>Welcome {{userName}}</h2>
+                <p>Back off, man. I'm a scientist.</p>
+            </div>
             <ion-list>
-                <ion-item nav-clear menu-close ui-sref="app.home">
-                    <i class='ion-ios-home'></i>
+                <ion-item item-dark nav-clear menu-close>
+                    <i class='ion-ios-home'></i> Home
                 </ion-item>
+
                 <ion-item nav-clear menu-close>
-                    <i class="ion-alert-circled"></i>
-                </ion-item>
-                <ion-item nav-clear menu-close>
-                    <i class="ion-cash"></i>
-                </ion-item>
-                <ion-item nav-clear menu-close>
-                    <i class="ion-ios-world"></i>
-                </ion-item>
-                <ion-item nav-clear menu-close>
-                    <i class="ion-locked"></i>
-                </ion-item>
-                <ion-item nav-clear menu-close>
-                    <i class="ion-power"></i>
+                    <i class="ion-power"></i> Sign out
                 </ion-item>
             </ion-list>
     </ion-side-menu>

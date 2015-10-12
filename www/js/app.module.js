@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    angular.module('firebase', [
+    angular.module('firebaseApp', [
 
         'app.core',
         'app.widgets',
@@ -8,7 +8,8 @@
         /*
          * Feature areas
          */
-        'app.dashboard'
+        'app.dashboard',
+        'app.login'
 
     ]);
 
