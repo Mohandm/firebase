@@ -9,7 +9,8 @@
          * Feature areas
          */
         'app.dashboard',
-        'app.login'
+        'app.login',
+        'app.post'
 
     ]);
 

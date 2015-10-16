@@ -1,0 +1,19 @@
+<ion-view>
+    <ion-content class="has-header">
+        <form name="vm.myForm" ng-submit="vm.submit()" novalidate>
+
+            <ion-list>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Topic</span>
+                    <input type="text" name="topic" placeholder="Topic" required ng-model="vm.post.topic">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Description</span>
+                    <textarea name="description" placeholder="Description" required ng-model="vm.post.description"></textarea>
+                </label>
+            </ion-list>
+            <button type="submit" class="button button-block button-positive">Post</button>
+
+        </form>
+    </ion-content>
+</ion-view>

@@ -7,8 +7,9 @@
         var vm = this;
         var itemsRef = new Firebase("https://ionicfiremohan.firebaseio.com/items");
         var ref = $firebaseArray(itemsRef);
-
-        vm.submit = function (object) {
+        vm.post = {};
+        vm.submit = function () {
+            var object = vm.post;
             object.user = User.getUser();
             ref.$add({
                 object

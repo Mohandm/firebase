@@ -21,8 +21,11 @@
 
         function setUser(userObj) {
             user = userObj;
-            $rootScope.userImg = userObj.facebook.profileImageURL;
-            $rootScope.userName = userObj.facebook.displayName;
+            if (userObj && userObj !== null) {
+
+                $rootScope.userImg = userObj.facebook.profileImageURL;
+                $rootScope.userName = userObj.facebook.displayName;
+            }
         }
     }
 })();
