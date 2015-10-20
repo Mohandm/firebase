@@ -1,37 +1,37 @@
 <ion-side-menus enable-menu-with-back-views="true">
-    <ion-side-menu-content>
-        <ion-nav-bar class="bar-positive" align-title='center'>
-            <ion-nav-title>
+	<ion-side-menu-content>
+		<ion-nav-bar class="bar-positive" align-title='center'>
+			<ion-nav-title>
 
-            </ion-nav-title>
-            <ion-nav-buttons side="left">
-                <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
-            </ion-nav-buttons>
-        </ion-nav-bar>
+			</ion-nav-title>
+			<ion-nav-buttons side="left">
+				<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+			</ion-nav-buttons>
+		</ion-nav-bar>
 
-        <ion-nav-view name="mainContent" animation="slide-left-right"></ion-nav-view>
-    </ion-side-menu-content>
+		<ion-nav-view name="mainContent" animation="slide-left-right"></ion-nav-view>
+	</ion-side-menu-content>
 
-    <ion-side-menu side="left">
+	<ion-side-menu side="left">
 
-        <ion-content>
-            <div class="item item-dark item-avatar" href="#">
-                <img src="{{userImg}}">
-                <h2>Welcome {{userName}}</h2>
-                <p>Back off, man. I'm a scientist.</p>
-            </div>
-            <ion-list>
-                <ion-item item-dark nav-clear menu-close ui-sref="app.home">
-                    <i class='ion-ios-home'></i> Home
-                </ion-item>
-                <ion-item item-dark nav-clear menu-close ui-sref="app.post">
-                    Create Post
-                </ion-item>
+		<ion-content>
+			<div class="item item-dark item-avatar" href="#">
+				<img src="{{userImg}}">
+				<h2>Welcome {{userName}}</h2>
+				<p>Back off, man. I'm a scientist.</p>
+			</div>
+			<ion-list>
+				<ion-item item-dark nav-clear menu-close ui-sref="app.dashboard">
+					<i class='ion-ios-home'></i> Home
+				</ion-item>
+				<ion-item item-dark nav-clear menu-close ui-sref="app.post">
+					Create Post
+				</ion-item>
 
-                <ion-item nav-clear menu-close>
-                    <i class="ion-power"></i> Sign out
-                </ion-item>
-            </ion-list>
-    </ion-side-menu>
+				<ion-item nav-clear menu-close>
+					<i class="ion-power"></i> Sign out
+				</ion-item>
+			</ion-list>
+	</ion-side-menu>
 
 </ion-side-menus>
