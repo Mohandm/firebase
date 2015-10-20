@@ -20,8 +20,12 @@
         }
 
         function setUser(userObj) {
-            user = userObj;
+
             if (userObj && userObj !== null) {
+                user = {};
+                user.uid = userObj.uid;
+                user.displayName = userObj.facebook.displayName;
+                user.userImg = userObj.facebook.profileImageURL;
 
                 $rootScope.userImg = userObj.facebook.profileImageURL;
                 $rootScope.userName = userObj.facebook.displayName;
